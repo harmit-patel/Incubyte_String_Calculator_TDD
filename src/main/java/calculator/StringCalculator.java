@@ -17,5 +17,5 @@ public class StringCalculator {
             sum += Integer.parseInt(part);
         }
         return sum;
-}
+    }
 }
