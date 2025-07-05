@@ -32,4 +32,8 @@ class StringCalculatorTest {
     void newlineDelimiterShouldWork() {
         assertEquals(6, StringCalculator.add("1\n2,3"));
     }
+    @Test
+    void customDelimiterShouldBeHandled() {
+        assertEquals(3, StringCalculator.add("//;\n1;2"));
+    }
 }
