@@ -22,4 +22,9 @@ class StringCalculatorTest {
     void twoNumbersShouldReturnSum() {
         assertEquals(9, StringCalculator.add("4,5"));
     }
+
+    @Test
+    void multipleNumbersShouldReturnSum() {
+        assertEquals(15, StringCalculator.add("1,2,3,4,5"));
+    }
 }
