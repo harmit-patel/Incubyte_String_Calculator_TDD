@@ -44,4 +44,9 @@ class StringCalculatorTest {
         });
         assertEquals("negative numbers not allowed: -2,-5", e.getMessage());
     }
+
+    @Test
+    void customDelimiterWithSpecialCharShouldWork() {
+        assertEquals(6, StringCalculator.add("//*\n1*2*3"));
+    }
 }
