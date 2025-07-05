@@ -36,4 +36,12 @@ class StringCalculatorTest {
     void customDelimiterShouldBeHandled() {
         assertEquals(3, StringCalculator.add("//;\n1;2"));
     }
+
+    @Test
+    void negativeNumbersShouldThrowException() {
+        Exception e = assertThrows(IllegalArgumentException.class, () -> {
+            StringCalculator.add("1,-2,3,-5");
+        });
+        assertEquals("negative numbers not allowed: -2,-5", e.getMessage());
+    }
 }
