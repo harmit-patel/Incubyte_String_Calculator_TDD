@@ -14,6 +14,7 @@ class StringCalculatorTest {
 
     @Test
     void singleNumberShouldReturnTheSameNumber() {
-        assertEquals(5, StringCalculator.add("5"));
+        StringCalculator calc = new StringCalculator();
+        assertEquals(5, calc.add("5"));
     }
 }
