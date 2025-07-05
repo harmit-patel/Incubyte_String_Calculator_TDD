@@ -27,4 +27,9 @@ class StringCalculatorTest {
     void multipleNumbersShouldReturnSum() {
         assertEquals(15, StringCalculator.add("1,2,3,4,5"));
     }
+
+    @Test
+    void newlineDelimiterShouldWork() {
+        assertEquals(6, StringCalculator.add("1\n2,3"));
+    }
 }
