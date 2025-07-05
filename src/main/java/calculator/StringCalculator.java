@@ -1,7 +1,8 @@
 package calculator;
 
 public class StringCalculator {
-    public int add(String numbers) {
+    public static int add(String numbers) {
+
         if (numbers == null || numbers.isEmpty()) {
             return 0;
     }

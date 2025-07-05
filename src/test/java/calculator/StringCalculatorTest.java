@@ -17,4 +17,9 @@ class StringCalculatorTest {
         StringCalculator calc = new StringCalculator();
         assertEquals(5, calc.add("5"));
     }
+
+    @Test
+    void twoNumbersShouldReturnSum() {
+        assertEquals(9, StringCalculator.add("4,5"));
+    }
 }
