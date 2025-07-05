@@ -18,31 +18,30 @@ This project implements a **String Calculator** in Java using **Test-Driven Deve
 
 ---
 
-## 💡 How to Run
+## 📦 Clone the Repo
 
-### 📦 Clone the Repo
 ```bash
 git clone https://github.com/harmit-patel/Incubyte_String_Calculator_TDD.git
 cd Incubyte_String_Calculator_TDD
-🧪 Run Tests (via IntelliJ)
+🧪 Run Tests
+🖥️ Via IntelliJ IDEA
 Open the project in IntelliJ IDEA
 
-Run StringCalculatorTest.java
+Navigate to:
+src/test/java/calculator/StringCalculatorTest.java
 
-Or via Maven (Optional)
-If you're using Maven, run:
+Right-click → Run to execute the tests
 
-bash
-Copy
-Edit
+⚙️ Via Maven (Optional)
+Make sure Maven is installed, then run:
+
 mvn test
+
 📁 Project Structure
-css
-Copy
-Edit
-string-calculator-tdd/
+
+Incubyte_String_Calculator_TDD/
 ├── README.md
-├── pom.xml (optional)
+├── pom.xml
 └── src
     ├── main
     │   └── java
@@ -52,43 +51,36 @@ string-calculator-tdd/
         └── java
             └── calculator
                 └── StringCalculatorTest.java
-🧪 Commit History (TDD Style)
-Each test case is developed in TDD fashion:
+
+🔁 Commit History (TDD Style)
+Each feature is developed using the Red-Green-Refactor approach:
 
 Stage	Commit Message Example
-🔴	 TEST: return 0 for empty string input
-🟢	 FIX: handle empty string and return 0
-🔴	 TEST: support custom delimiter like //;\n1;2
-🟢	 FIX: parse and use custom delimiter in calculation
-🔴	 TEST: throw error for negative numbers
-🟢	 FIX: throw exception listing all negative numbers
+🔴	TEST: return 0 for empty string input
+🟢	FIX: handle empty string and return 0
+🔴	TEST: support custom delimiter like //;\n1;2
+🟢	FIX: parse and use custom delimiter in calculation
+🔴	TEST: throw error for negative numbers
+🟢	FIX: throw exception listing all negative numbers
 
 ⚙️ Tech Stack
 Java 17+
 
 JUnit 5
 
-IntelliJ IDEA (Recommended)
+IntelliJ IDEA (recommended)
 
-Optional: Maven for dependency management and build
-
-📸 Screenshots
-Add IntelliJ test result screenshots here (optional)
+Maven (optional)
 
 🧠 TDD Concepts Demonstrated
 ✅ Red-Green-Refactor Cycle
-
 ✅ Unit Testing with JUnit
-
 ✅ Clean Code Practices
-
 ✅ String Parsing & Regex
-
 ✅ Defensive Programming (e.g., negative number handling)
 
 ✍️ Author
 Harmit Patel
-
 GitHub: @harmit-patel
 
 📜 License
