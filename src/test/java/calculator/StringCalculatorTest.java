@@ -49,4 +49,9 @@ class StringCalculatorTest {
     void customDelimiterWithSpecialCharShouldWork() {
         assertEquals(6, StringCalculator.add("//*\n1*2*3"));
     }
+
+    @Test
+    void longCustomDelimiterShouldWork() {
+        assertEquals(6, StringCalculator.add("//[***]\n1***2***3"));
+    }
 }
