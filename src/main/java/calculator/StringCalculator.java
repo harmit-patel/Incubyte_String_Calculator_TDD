@@ -40,7 +40,6 @@ public class StringCalculator {
                             .map(String::valueOf)
                             .collect(Collectors.joining(",")));
         }
-
         return sum;
     }
 }
