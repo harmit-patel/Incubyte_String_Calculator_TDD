@@ -13,7 +13,14 @@ public class StringCalculator {
         String delimiterPattern = ",|\n";
         String numbersPart = numbers;
 
-        if (numbers.startsWith("//")) {
+        if (numbers.startsWith("//[")) {
+            int end = numbers.indexOf("]");
+            String delimiter = numbers.substring(3, end);
+            delimiterPattern = Pattern.quote(delimiter);
+            numbersPart = numbers.substring(numbers.indexOf("\n") + 1);
+        }
+
+        else if (numbers.startsWith("//")) {
             int newlineIndex = numbers.indexOf("\n");
             String delimiter = numbers.substring(2, newlineIndex);
             delimiterPattern = Pattern.quote(delimiter);
@@ -40,6 +47,7 @@ public class StringCalculator {
                             .map(String::valueOf)
                             .collect(Collectors.joining(",")));
         }
+
         return sum;
     }
 }
