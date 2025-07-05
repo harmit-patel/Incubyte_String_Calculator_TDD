@@ -11,7 +11,7 @@ public class StringCalculator {
             return Integer.parseInt(numbers); // single number
         }
 
-        String[] parts = numbers.split(",");
+        String[] parts = numbers.split(",|\n");
         int sum = 0;
         for (String part : parts) {
             sum += Integer.parseInt(part);
