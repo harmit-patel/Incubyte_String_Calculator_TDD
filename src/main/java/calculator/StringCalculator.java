@@ -5,7 +5,17 @@ public class StringCalculator {
 
         if (numbers == null || numbers.isEmpty()) {
             return 0;
-    }
-        return Integer.parseInt(numbers);
+        }
+
+        if (!numbers.contains(",")) {
+            return Integer.parseInt(numbers); // single number
+        }
+
+        String[] parts = numbers.split(",");
+        int sum = 0;
+        for (String part : parts) {
+            sum += Integer.parseInt(part);
+        }
+        return sum;
 }
 }
